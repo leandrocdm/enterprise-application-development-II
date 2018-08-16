@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("01.Fiap.HelloWorld.Console.UI")]
+[assembly: AssemblyTitle("01.FIAP.HelloWorld.Console.UI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("01.Fiap.HelloWorld.Console.UI")]
+[assembly: AssemblyProduct("01.FIAP.HelloWorld.Console.UI")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5f9be5a2-807e-42c2-b4df-7cda5e6f9636")]
+[assembly: Guid("19378165-4207-444a-b0d4-898a147b0731")]
 
 // Version information for an assembly consists of the following four values:
 //

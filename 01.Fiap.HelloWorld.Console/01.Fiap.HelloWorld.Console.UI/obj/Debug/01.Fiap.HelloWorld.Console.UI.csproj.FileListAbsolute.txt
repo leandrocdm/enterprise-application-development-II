@@ -1,7 +1,7 @@
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/bin/Debug/01.Fiap.HelloWorld.Console.UI.exe.config
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/bin/Debug/01.Fiap.HelloWorld.Console.UI.exe
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/bin/Debug/01.Fiap.HelloWorld.Console.UI.pdb
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/obj/Debug/01.Fiap.HelloWorld.Console.UI.csprojResolveAssemblyReference.cache
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/obj/Debug/01.Fiap.HelloWorld.Console.UI.csproj.CoreCompileInputs.cache
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/obj/Debug/01.Fiap.HelloWorld.Console.UI.exe
-/Volumes/Macintosh HD/Desenvolvimento/4_semestre/01.Fiap.HelloWorld.Console/01.Fiap.HelloWorld.Console.UI/obj/Debug/01.Fiap.HelloWorld.Console.UI.pdb
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\bin\Debug\01.FIAP.HelloWorld.Console.UI.exe.config
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\bin\Debug\01.FIAP.HelloWorld.Console.UI.exe
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\bin\Debug\01.FIAP.HelloWorld.Console.UI.pdb
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\obj\Debug\01.FIAP.HelloWorld.Console.UI.csprojAssemblyReference.cache
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\obj\Debug\01.FIAP.HelloWorld.Console.UI.csproj.CoreCompileInputs.cache
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\obj\Debug\01.FIAP.HelloWorld.Console.UI.exe
+D:\2TDSS-Enterprise-2SEM\01.FIAP.HelloWorld.Console\01.FIAP.HelloWorld.Console.UI\obj\Debug\01.FIAP.HelloWorld.Console.UI.pdb

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01.Fiap.HelloWorld.Console.UI.Model
+namespace _01.FIAP.HelloWorld.Console.UI.Model
 {
     enum TipoCarro
-
     {
-        
-        Utilitario, Suv, Senda, Hatch
-
+        SUV,
+        Sedan,
+        Passeio,
+        Utilitario,
+        Luxo
     }
-
 }
