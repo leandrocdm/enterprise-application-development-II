@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B9BCA678-3E7F-4706-9BF8-FAE1716D2954}</ProjectGuid>
+    <ProjectGuid>{B1E375B9-BD46-427C-8485-7CF787A7B0F2}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.FIAP.Web.MVC</RootNamespace>
-    <AssemblyName>02.FIAP.Web.MVC</AssemblyName>
+    <RootNamespace>_02.Fiap.Web.MVC</RootNamespace>
+    <AssemblyName>02.Fiap.Web.MVC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -145,9 +145,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2626</DevelopmentServerPort>
+          <DevelopmentServerPort>2880</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2626/</IISUrl>
+          <IISUrl>http://localhost:2880/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

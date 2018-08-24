@@ -4,22 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01.FIAP.HelloWorld.Console.UI.Model
+namespace _01.Fiap.HelloWorld.Console.UI.Model
 {
-    public abstract class Veiculo
+    class Veiculo
     {
-        public double Potencia { get; set; }
+        private double _potencia;
 
         public int Ano { get; set; }
-
-        public Veiculo(int ano, double potencia)
+        public double Potencia
         {
-            Potencia = potencia;
-            Ano = ano;
+            get { return _potencia; }
+            set
+            {
+                if(value >=0)
+                {
+                    _potencia = value;
+                }
+            }
         }
-
-        public virtual void Acelerar() => System.Console.WriteLine("Veiculo acelerando!");
-
-        public abstract void Desligar();
     }
 }

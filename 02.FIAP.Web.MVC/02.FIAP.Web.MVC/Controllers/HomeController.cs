@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace _02.FIAP.Web.MVC.Controllers
+namespace _02.Fiap.Web.MVC.Controllers
 {
     public class HomeController : Controller
     {
