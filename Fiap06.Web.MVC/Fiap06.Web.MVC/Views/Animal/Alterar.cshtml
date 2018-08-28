@@ -1,12 +1,9 @@
 ﻿@model Fiap06.Web.MVC.Models.Animal
-
 @{
-    /**/
-
-    ViewBag.Title = "Cadastrar";
+    ViewBag.Title = "Alterar";
 }
 
-<h2>Cadastrar</h2>
+<h2>Alterar</h2>
 
 @if (TempData["msg"] != null)
 {
@@ -17,6 +14,7 @@
 
 @using (Html.BeginForm())
 {
+    @Html.HiddenFor(animal => animal.AnimalId)
     <div class="form-group">
         @Html.LabelFor(animal => animal.Nome)
         @Html.TextBoxFor(animal => animal.Nome, new { @class = "form-control" })
@@ -37,8 +35,5 @@
         @Html.CheckBoxFor(animal => animal.Castrado)
     </div>
 
-    <input type="submit" value="Cadastrar" class="btn btn-primary" />
-
+    <input type="submit" value="Editar" class="btn btn-success" />
 }
-
-
