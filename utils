@@ -1,0 +1,51 @@
+1- criar projeto
+2- instalar o entity framework	
+3- criar os models
+4- colocar atributos, o id é NomeId
+5- criar a pasta "Persistencia"
+6- criar uma class com DbSet<Models> dentro da pasta Persistencia
+7- ajustar o web.config, colocando no final do arquivo:
+
+  <connectionStrings>
+    <add name="BrasfootContext" --nome do context
+         connectionString="Data Source=(LocalDB)\MSSQLLocalDB; 
+         AttachDbFilename=|DataDirectory|\Banco.mdf; 
+         Integrated Security=True" 
+         providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+8- ajustar o global.asax
+
+            Database.SetInitializer(
+                new DropCreateDatabaseIfModelChanges<BrasfootContext>()); --setando o context
+
+9- criar o controller pra cada model (CRUD)
+9.0- criar um atributo do context "private BrasfootContext _context = new BrasfootContext();"
+9.1- mudar o nome do metodo já criado para Cadastrar e adicionar a anotação [HttpGet]
+9.2- criar uma view
+9.3- criar um novo metodo Cadastrar com a anotação [HttpPost] passando o model como parametro
+           _context.Times.Add(time); --metodo do DbContext para salvar no banco
+            _context.SaveChanges(); --metodo do DbContext pra commitar
+            TempData["msg"] = "Time " + time.Nome + " cadastrado!"; --msg
+            return RedirectToAction("Cadastrar"); -- redirecionar para a pagina
+
+10- na view adiconar o model (@model Fiap07.WEB.MVC.Models.Time)
+10.1- usar os helpers @using (Html.BeginForm()){} Exemplo:
+
+        <div class="form-group">
+            @Html.LabelFor(t => t.Nome)
+            @Html.TextBoxFor(t => t.Nome, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(t => t.Mundial)
+            @Html.CheckBoxFor(t => t.Mundial)
+        </div>
+		
+11- Colocar a condição de mensagem:
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
