@@ -1,0 +1,36 @@
+﻿@model List<Fiap07.Web.MVC.Models.Imovel>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Imóveis</h2>
+
+@using (Html.BeginForm("Buscar", "Imovel",
+        FormMethod.Get, new { @class = "form-inline"}))
+{
+    @Html.DropDownList("codigo", ViewBag.categorias as SelectList,
+        "Selecione" , new { @class = "form-control" })
+    @Ajudante.Botao("Buscar")
+}
+
+<table class="table" style="margin-top:20px">
+    <tr>
+        <th>Código</th>
+        <th>Endereço</th>
+        <th>Valor</th>
+        <th>Categoria</th>
+        <th>Tipo Contrato</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ImovelId</td>
+            <td>@item.Endereco</td>
+            <td>@item.Valor</td>
+            <td>@item.Categoria.Nome</td>
+            <td>@item.Contrato</td>
+        </tr>
+    }
+</table>
+

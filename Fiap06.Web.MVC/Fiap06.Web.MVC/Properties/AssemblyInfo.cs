@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Fiap07.Web.MVC")]
+[assembly: AssemblyTitle("Fiap06.Web.MVC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Fiap07.Web.MVC")]
+[assembly: AssemblyProduct("Fiap06.Web.MVC")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1e7f08da-c2df-4a01-ade0-5f62668239bb")]
+[assembly: Guid("30074eae-5b63-4d2e-94e5-cd685a26e620")]
 
 // Version information for an assembly consists of the following four values:
 //

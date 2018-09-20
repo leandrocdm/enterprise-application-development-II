@@ -1,4 +1,4 @@
-﻿using Fiap07.Web.MVC.Persistencia;
+﻿using Fiap06.Web.MVC.Persistencia;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Fiap07.Web.MVC
+namespace Fiap06.Web.MVC
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -16,7 +16,7 @@ namespace Fiap07.Web.MVC
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             Database.SetInitializer(
-                new DropCreateDatabaseIfModelChanges<ImobiliariaContext>());
+                new DropCreateDatabaseIfModelChanges<BotecoContext>());
         }
     }
 }
