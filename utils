@@ -1,4 +1,4 @@
-1- criar projeto
+1- criar projeto (ASP.NET MVC)
 2- instalar o entity framework	
 3- criar os models
 4- colocar atributos, o id é NomeId
@@ -20,7 +20,8 @@
                 new DropCreateDatabaseIfModelChanges<BrasfootContext>()); --setando o context
 
 9- criar o controller pra cada model (CRUD)
-9.0- criar um atributo do context "private BrasfootContext _context = new BrasfootContext();"
+9.0- criar um atributo do context:
+private BrasfootContext _context = new BrasfootContext();
 9.1- mudar o nome do metodo já criado para Cadastrar e adicionar a anotação [HttpGet]
 9.2- criar uma view
 9.3- criar um novo metodo Cadastrar com a anotação [HttpPost] passando o model como parametro
