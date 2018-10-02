@@ -6,14 +6,13 @@ using System.Web;
 
 namespace Fiap07.Web.MVC.Models
 {
-    public class Corretor
+    public class Tecnico
     {
-        [Key]
-        public int NumeroCreci { get; set; }
-        public string Nome { get; set; }
-        public float Comissao { get; set; }
+        public int TecnicoId { get; set; }
 
-        //Relacionamentos
-        public IList<Imovel> Imoveis { get; set; }
+        [Display(Name = "Nome do Técnico")]
+        public string Nome { get; set; }
+
+        public decimal Salario { get; set; }
     }
 }

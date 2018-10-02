@@ -5,13 +5,13 @@ using System.Web;
 
 namespace Fiap07.Web.MVC.Models
 {
-    public class Categoria
+    public class Campeonato
     {
-        public int CategoriaId { get; set; }
+        public int CampeonatoId { get; set; }
         public string Nome { get; set; }
-        public string Descricao { get; set; }
+        public decimal Premio { get; set; }
 
         //Relacionamentos
-        public IList<Imovel> Imoveis { get; set; }
+        public virtual IList<Time> Times { get; set; }
     }
 }

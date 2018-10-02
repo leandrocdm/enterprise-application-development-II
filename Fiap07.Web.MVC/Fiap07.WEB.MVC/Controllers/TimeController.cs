@@ -8,9 +8,9 @@ using System.Web.Mvc;
 
 namespace Fiap07.Web.MVC.Controllers
 {
-    public class CategoriaController : Controller
+    public class TimeController : Controller
     {
-        private ImobiliariaContext _context = new ImobiliariaContext();
+        private BrasfootContext _context = new BrasfootContext();
 
         [HttpGet]
         public ActionResult Cadastrar()
@@ -19,11 +19,11 @@ namespace Fiap07.Web.MVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult Cadastrar(Categoria categoria)
+        public ActionResult Cadastrar(Time time)
         {
-            _context.Categorias.Add(categoria);
+            _context.Times.Add(time);
             _context.SaveChanges();
-            TempData["msg"] = "Categoria Cadastrada!";
+            TempData["msg"] = "Cadastrado!";
             return RedirectToAction("Cadastrar");
         }
     }
