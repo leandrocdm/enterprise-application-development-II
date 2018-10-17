@@ -9,31 +9,29 @@ namespace _05.Fiap.Web.MVC.Controllers
 {
     public class BarController : Controller
     {
-        private static List<Bar> _bar = new List<Bar>();
+        private static List<Bar> _lista = new List<Bar>();
 
         [HttpGet]
         public ActionResult Listar()
         {
-            return View(_bar);
+            return View(_lista);
         }
 
         [HttpGet]
         public ActionResult Cadastrar()
         {
-            List<string> cidades = new List<string>
-            {
-                "São Paulo",
-                "Rio de Janeiro",
-                "Salvador"
-            };
-            ViewBag.listaCidade = new SelectList(cidades);
+            List<string> cidades = new List<string>();
+            cidades.Add("São Paulo");
+            cidades.Add("Rio de Janeiro");
+            //Enviar para a pagina a lista de cidades para o select
+            ViewBag.listaCidades = new SelectList(cidades);
             return View();
         }
 
         [HttpPost]
         public ActionResult Cadastrar(Bar bar)
         {
-            _bar.Add(bar);
+            _lista.Add(bar);
             TempData["msg"] = "Bar cadastrado!";
             return RedirectToAction("Cadastrar");
         }

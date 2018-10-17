@@ -11,6 +11,20 @@ namespace Fiap08.Web.MVC.Units
     {
         private EscolaContext _context = new EscolaContext();
 
+        private IDependenteRepository _dependenteRepository;
+
+        public IDependenteRepository DependenteRepository
+        {
+            get
+            {
+                if (_dependenteRepository == null)
+                {
+                    _dependenteRepository = new DependenteRepository(_context);
+                }
+                return _dependenteRepository;
+            }
+        }
+
         //propfull
         private IResponsavelRepository _responsavelRepository;
 

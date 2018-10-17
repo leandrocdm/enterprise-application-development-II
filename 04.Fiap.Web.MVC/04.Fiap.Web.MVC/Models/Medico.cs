@@ -8,7 +8,7 @@ namespace _04.Fiap.Web.MVC.Models
     public class Medico
     {
         public int Crm { get; set; }
-        public String Nome { get; set; }
+        public string Nome { get; set; }
         public bool Ativo { get; set; }
         public string Descricao { get; set; }
         public decimal Salario { get; set; }

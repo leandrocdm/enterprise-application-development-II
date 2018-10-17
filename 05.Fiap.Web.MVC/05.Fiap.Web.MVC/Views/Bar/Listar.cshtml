@@ -1,24 +1,23 @@
 ﻿@model List<_05.Fiap.Web.MVC.Models.Bar>
-
 @{
     ViewBag.Title = "Listar";
 }
 
 <h2>Listar</h2>
-
 <table class="table">
     <tr>
         <th>Nome</th>
         <th>Descrição</th>
-        <th>Proibido para menores</th>
+        <th>Proibido menores</th>
+        <th>Cidade</th>
     </tr>
-    @foreach (var bar in Model)
+    @foreach (var item in Model)
     {
         <tr>
-            <th>@bar.Nome</th>
-            <th>@bar.Descricao</th>
-            <th>@(bar.Proibido?"Sim":"Não")</th>
+            <td>@item.Nome</td>
+            <td>@item.Descricao</td>
+            <td>@item.ProibidoMenores</td>
+            <td>@item.Cidade</td>
         </tr>
     }
 </table>
-

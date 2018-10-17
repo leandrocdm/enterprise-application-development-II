@@ -9,6 +9,7 @@ namespace _03.Fiap.Web.MVC.Controllers
 {
     public class FilmeController : Controller
     {
+        // GET: Filme
         [HttpGet]
         public ActionResult Cadastrar()
         {
@@ -18,10 +19,14 @@ namespace _03.Fiap.Web.MVC.Controllers
         [HttpPost]
         public ActionResult Cadastrar(Filme filme)
         {
+            //passar valores para a view (página html)
             ViewBag.titulo = filme.Nome;
-            TempData["msg"] = "Filme Cadastrado";
-            return View(filme);
+            TempData["msg"] = "Filme cadastrado!";
+            return View(filme); //envia o filme para a tela
+            //retorna um texto para o browser
             //return Content(filme.Nome);
         }
+
+
     }
 }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C6C2C2D-8494-45C3-9F1B-B32CF76BC4B9}</ProjectGuid>
+    <ProjectGuid>{33DE4505-2A6C-4ECA-91ED-4338C3DD8986}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_01.Fiap.HelloWorld.Console.UI</RootNamespace>
     <AssemblyName>01.Fiap.HelloWorld.Console.UI</AssemblyName>
@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Carro.cs" />
+    <Compile Include="Model\IAquatico.cs" />
     <Compile Include="Model\Lancha.cs" />
+    <Compile Include="Model\TipoCarro.cs" />
     <Compile Include="Model\Veiculo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,7 +9,7 @@ namespace _05.Fiap.Web.MVC.Models
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }
-        public bool Proibido { get; set; }
-        public List<string> Cidade { get; set; }
+        public bool ProibidoMenores { get; set; }
+        public string Cidade { get; set; }
     }
 }

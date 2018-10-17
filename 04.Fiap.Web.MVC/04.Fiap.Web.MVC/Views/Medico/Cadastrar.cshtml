@@ -5,23 +5,23 @@
 }
 
 <h2>Cadastrar</h2>
-    @if(TempData["msg"] != null)
-    {
+
+@if (TempData["msg"] != null)
+{
     <div class="alert alert-success">
         @TempData["msg"]
     </div>
-    }
+}
 
 @using (Html.BeginForm())
 {
-
     <div class="form-group">
-        @Html.LabelFor(pipoca => pipoca.Crm)
+        @Html.LabelFor(churros => churros.Crm)
         @Html.TextBoxFor(m => m.Crm)
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Nome)
-        @Html.TextBoxFor(m => m.Nome)
+        @Html.TextBoxFor(c => c.Nome)
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Salario)
@@ -35,5 +35,6 @@
         @Html.CheckBoxFor(m => m.Ativo)
         @Html.LabelFor(m => m.Ativo)
     </div>
-    <input type="submit" value="Cadastrar" class="btn btn-primary"/>
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
 }
+
