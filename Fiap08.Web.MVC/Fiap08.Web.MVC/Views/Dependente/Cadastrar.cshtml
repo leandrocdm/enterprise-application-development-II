@@ -1,4 +1,4 @@
-﻿@model Fiap08.Web.MVC.Models.Dependente
+﻿@model Fiap08.Web.MVC.ViewModels.DependenteViewModel
 @{
     ViewBag.Title = "Cadastrar";
 }
@@ -13,17 +13,17 @@
 @using (Html.BeginForm())
 {
     <div class="form-group">
-        @Html.LabelFor(c => c.Nome)
-        @Html.TextBoxFor(c => c.Nome, new { @class = "form-control"})
+        @Html.LabelFor(c => c.Dependente.Nome)
+        @Html.TextBoxFor(c => c.Dependente.Nome, new { @class = "form-control"})
     </div>
     <div class="form-group">
-        @Html.LabelFor(c => c.DataNascimento)
-        @Html.TextBoxFor(c => c.DataNascimento, new { @class = "form-control"})
+        @Html.LabelFor(c => c.Dependente.DataNascimento)
+        @Html.TextBoxFor(c => c.Dependente.DataNascimento, new { @class = "form-control"})
     </div>
     <div class="form-group">
-        @Html.LabelFor(c => c.Responsavel)
-        @Html.DropDownListFor(c => c.ResponsavelId,
-            ViewBag.responsaveis as SelectList, "Selecione",
+        @Html.LabelFor(c => c.Dependente.Responsavel)
+        @Html.DropDownListFor(c => c.Dependente.ResponsavelId,
+            Model.Responsaveis, "Selecione",
             new { @class = "form-control" })
     </div>
     <input type="submit" value="Cadastrar" class="btn btn-primary" />

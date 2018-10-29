@@ -1,5 +1,6 @@
 ﻿using Fiap08.Web.MVC.Models;
 using Fiap08.Web.MVC.Units;
+using Fiap08.Web.MVC.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,9 @@ namespace Fiap08.Web.MVC.Controllers
         private UnitOfWork _unit = new UnitOfWork();
 
         [HttpPost]
-        public ActionResult Cadastrar(Responsavel resp)
+        public ActionResult Cadastrar(ResponsavelViewModel resp)
         {
-            _unit.ResponsavelRepository.Cadastrar(resp);
+            _unit.ResponsavelRepository.Cadastrar(resp.Responsavel);
             _unit.Salvar();
             TempData["msg"] = "Responsável registrado";
             return RedirectToAction("Cadastrar");
@@ -24,7 +25,9 @@ namespace Fiap08.Web.MVC.Controllers
         [HttpGet]
         public ActionResult Cadastrar()
         {
-            return View();
+            var viewModel = new ResponsavelViewModel();
+            viewModel.Responsaveis = _unit.ResponsavelRepository.Listar();
+            return View(viewModel);
         }
 
         //Liberar os recursos (conexão com o banco)
